@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coursify.me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="container">
+        <div class="form">
+          <div class="header">
+            <img src="imgs/logo.svg" alt="Coursify.me" title="Coursify.me" />
+            <h1>Seja bem vindo ao</h1>
+            <h2>Coursify.Me Enterprise</h2>
+            <p>
+              Although the bobcat is rerely seen, it is the most common wildcat
+              in North America
+            </p>
+          </div>
+          <div class="selection">
+            <a href="#cadastro" onclick="ativar1()">Cadastro</a>
+            <a href="#login" onclick="ativar2()">Login</a>
+          </div>
+          <div class="cadastro" >
+            <form id="cadastro">
+              <div>
+                <input
+                  name="data[Contato][nome]"
+                  type="text"
+                  class="form-control"
+                  placeholder="Nome Da Escola"
+                />
+              </div>
+              <div>
+                <input
+                  name="data[Contato][email]"
+                  type="email"
+                  class="form-control"
+                  placeholder="Seu E-mail"
+                />
+              </div>
+              <div>
+                <input
+                  name="data[Contato][senha]"
+                  type="password"
+                  class="form-control"
+                  placeholder="Crie uma senha"
+                />
+              </div>
+              <div>
+                <select name="ddi" id="ddi">
+                  <option value="DDI" disabled>DDI</option>
+                  <option value="+55">+55</option>
+                </select>
+                <input
+                  name="data[Contato][telefone]"
+                  type="text"
+                  class="form-control"
+                  placeholder="00 00000-0000"
+                />
+              </div>
+              <div>
+                <button type="submit" class="btn-send">Cadastrar</button>
+              </div>
+            </form>
+          </div>
+          <div class="login">
+            <form id="login" class="ativo">
+              <div>
+                <input
+                  name="data[Contato][email]"
+                  type="email"
+                  class="form-control"
+                  placeholder="Seu E-mail"
+                />
+              </div>
+              <div>
+                <input
+                  name="data[Contato][senha]"
+                  type="password"
+                  class="form-control"
+                  placeholder="Crie uma senha"
+                />
+              </div>
+              <div>
+                <button type="submit" class="btn-send">Login</button>
+              </div>
+            </form>
+          </div>
+          <div class="footer">
+            <span>2020 &copy; Coursify.Me. Todos os direitos Reservados</span>
+          </div>
+        </div>
+        <div class="slider">
+          <img src="imgs/image_01.svg" alt="" />
+          <img src="imgs/image_02.svg" alt="" />
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+span,
+p,
+div,
+li,
+form,
+label,
+input {
+  display: block;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+img,
+figure {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbfbfb;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  margin: 5em 10%;
+}
+.container .form {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2em;
+  height: 100%;
+  box-shadow: 3px 5px 11px #00000038;
+}
+.container .header {
+  margin-bottom: 3em;
+}
+.container .header h1 {
+  font-weight: normal;
+}
+.container .header h2 {
+  color: #47c9af;
+}
+.container .header p {
+  margin: 1em 0 0em;
+}
+.container .selection {
+  display: flex;
+  justify-content: space-between;
+}
+.container .form input {
+  width: 100%;
+  margin: 1em 0;
+}
+.container .cadastro div:nth-child(4) {
+  display: flex;
+}
+.container .cadastro select {
+  position: relative;
+  background-color: transparent;
+  height: 31px;
+  margin: 16px 16px 0 0;
+  appearance: none;
+  border: 1px solid #02020233;
+  border-radius: 4px;
+}
+.container .cadastro select option::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: red;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.container .cadastro button {
+  display: block;
+  margin: 0 auto;
+  background: #47c9af;
+  color: white;
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+}
+
+.container .login {
+}
+.container .login button {
+  display: block;
+  margin: 0 auto;
+  background: #47c9af;
+  color: white;
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+}
+.container .footer {
+  margin-top: 12em;
+}
+.container .footer span {
+  font-size: 14px;
+  font-weight: 100;
+  color: #00000071;
+  letter-spacing: -0.5px;
+  text-align: center;
+  width: 100%;
+}
+.container .slider img {
+  width: 750px;
+  height: auto;
+  opacity: 0.8;
+}
+.container .slider img:last-child {
+  display: none;
+}
+/*Events*/
+#cadastro,
+#login {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s all;
+}
+#login.ativo,
+#cadastro.ativo {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s all;
+}
