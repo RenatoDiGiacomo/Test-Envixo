@@ -22,74 +22,78 @@
             </p>
           </div>
           <div class="selection">
-            <a href="#cadastro" onclick="ativar1()">Cadastro</a>
-            <a href="#login" onclick="ativar2()">Login</a>
+            <a href="#cadastro" onclick="ativar1()" id="linkCadastro" class="ativoLink">Cadastro</a>
+            <a href="#login" onclick="ativar2()" id="linkLogin">Login</a>
           </div>
-          <div class="cadastro" >
-            <form id="cadastro">
-              <div>
-                <input
-                  name="data[Contato][nome]"
-                  type="text"
-                  class="form-control"
-                  placeholder="Nome Da Escola"
-                />
-              </div>
-              <div>
-                <input
-                  name="data[Contato][email]"
-                  type="email"
-                  class="form-control"
-                  placeholder="Seu E-mail"
-                />
-              </div>
-              <div>
-                <input
-                  name="data[Contato][senha]"
-                  type="password"
-                  class="form-control"
-                  placeholder="Crie uma senha"
-                />
-              </div>
-              <div>
-                <select name="ddi" id="ddi">
-                  <option value="DDI" disabled>DDI</option>
-                  <option value="+55">+55</option>
-                </select>
-                <input
-                  name="data[Contato][telefone]"
-                  type="text"
-                  class="form-control"
-                  placeholder="00 00000-0000"
-                />
-              </div>
-              <div>
-                <button type="submit" class="btn-send">Cadastrar</button>
-              </div>
-            </form>
-          </div>
-          <div class="login">
-            <form id="login" class="ativo">
-              <div>
-                <input
-                  name="data[Contato][email]"
-                  type="email"
-                  class="form-control"
-                  placeholder="Seu E-mail"
-                />
-              </div>
-              <div>
-                <input
-                  name="data[Contato][senha]"
-                  type="password"
-                  class="form-control"
-                  placeholder="Crie uma senha"
-                />
-              </div>
-              <div>
-                <button type="submit" class="btn-send">Login</button>
-              </div>
-            </form>
+          <div class="form-area">
+            <div class="cadastro">
+              <form id="cadastro" class="ativo">
+                <div>
+                  <input
+                    name="data[Contato][nome]"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nome Da Escola"
+                  />
+                </div>
+                <div>
+                  <input
+                    name="data[Contato][email]"
+                    type="email"
+                    class="form-control"
+                    placeholder="Seu E-mail"
+                  />
+                </div>
+                <div>
+                  <input
+                    name="data[Contato][senha]"
+                    type="password"
+                    class="form-control"
+                    placeholder="Crie uma senha"
+                  />
+                </div>
+                <div>
+                  <div class="selected">
+                    <select name="ddi" id="ddi">
+                      <option value="DDI" disabled>DDI</option>
+                      <option value="+55">+55</option>
+                    </select>
+                  </div>
+                  <input
+                    name="data[Contato][telefone]"
+                    type="text"
+                    class="form-control"
+                    placeholder="00 00000-0000"
+                  />
+                </div>
+                <div>
+                  <button type="submit" class="btn-send">Cadastrar</button>
+                </div>
+              </form>
+            </div>
+            <div class="login">
+              <form id="login">
+                <div>
+                  <input
+                    name="data[Contato][email]"
+                    type="email"
+                    class="form-control"
+                    placeholder="Seu E-mail"
+                  />
+                </div>
+                <div>
+                  <input
+                    name="data[Contato][senha]"
+                    type="password"
+                    class="form-control"
+                    placeholder="Crie uma senha"
+                  />
+                </div>
+                <div>
+                  <button type="submit" class="btn-send">Login</button>
+                </div>
+              </form>
+            </div>
           </div>
           <div class="footer">
             <span>2020 &copy; Coursify.Me. Todos os direitos Reservados</span>
